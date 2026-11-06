@@ -1,27 +1,353 @@
-<!doctype html>
-<html lang="en">
+!doctype html>
+<html lang="id">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fspeed Garage - Bengkel Motor & Tuning</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
-  <body>
-    <h1>Hello, sayang!</h1>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+  <body
+    class="bg-gray-50 text-slate-800 min-h-screen flex flex-col justify-between font-sans"
+  >
+    <!-- Header / Navbar (Tema Hijau Utama) -->
+    <header class="bg-emerald-600 text-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <!-- Logo Bengkel -->
+        <div class="flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-white text-emerald-600 rounded-lg flex items-center justify-center font-black text-xl shadow-sm"
+          >
+            F
+          </div>
+          <div>
+            <span class="font-extrabold text-xl tracking-wider text-white"
+              >FSPEED <span class="text-emerald-200">GARAGE</span></span
+            >
+            <p class="text-[10px] text-emerald-100 -mt-1">
+              Service & Performance Shop
+            </p>
+          </div>
+        </div>
 
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      <img class="avatar-img"widh=120px" src="https://github.com/mdo.png" alt="mdo">
-    </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
-</div>
+        <!-- Quick Contact Button (WhatsApp Direct) -->
+        <a
+          href="https://wa.me/6283143947796?text=Halo%20Fspeed%20Garage,%20saya%20mau%20tanya%20layanan%20dan%20servis."
+          target="_blank"
+          class="bg-emerald-800 hover:bg-emerald-900 text-white text-sm font-semibold px-4 py-2 rounded-lg flex items-center space-x-2 transition shadow-sm"
+        >
+          <i class="fa-brands fa-whatsapp text-green-400"></i>
+          <span>Hubungi Kami</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section & Jam Operasional -->
+    <section class="max-w-6xl mx-auto px-4 py-8 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <!-- Banner / Headline -->
+        <div
+          class="md:col-span-2 bg-white border border-emerald-100 p-8 rounded-2xl shadow-sm flex flex-col justify-center"
+        >
+          <span
+            class="text-emerald-600 font-bold text-sm tracking-widest uppercase mb-2"
+            >Solusi Perawatan Motor Anda</span
+          >
+          <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+            Servis Berkualitas, Performa Maksimal.
+          </h1>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Kami melayani servis rutin, tune up, bore up harian/balap, ganti
+            oli, hingga perbaikan kelistrikan dan rem untuk berbagai jenis motor
+            matic, bebek, dan sport.
+          </p>
+          <div class="flex flex-wrap gap-3 text-xs font-medium text-slate-700">
+            <span
+              class="bg-emerald-50 text-emerald-800 px-3 py-1.5 rounded-md border border-emerald-200"
+              ><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Mekanik
+              Berpengalaman</span
+            >
+            <span
+              class="bg-emerald-50 text-emerald-800 px-3 py-1.5 rounded-md border border-emerald-200"
+              ><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>
+              Sparepart Original</span
+            >
+            <span
+              class="bg-emerald-50 text-emerald-800 px-3 py-1.5 rounded-md border border-emerald-200"
+              ><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Harga
+              Pelajar</span
+            >
+          </div>
+        </div>
+
+        <!-- Card Waktu Buka & Tutup -->
+        <div
+          class="bg-white border border-emerald-100 p-6 rounded-2xl shadow-sm flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <div
+                class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <h2 class="text-lg font-bold text-slate-900">Jam Operasional</h2>
+            </div>
+
+            <ul class="space-y-3 text-sm">
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-slate-500">Senin - Jumat</span>
+                <span class="font-semibold text-slate-800"
+                  >08:00 - 17:00 WIB</span
+                >
+              </li>
+              <li class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="text-slate-500">Sabtu</span>
+                <span class="font-semibold text-slate-800"
+                  >08:00 - 15:00 WIB</span
+                >
+              </li>
+              <li class="flex justify-between pb-2">
+                <span class="text-slate-500">Minggu / Libur</span>
+                <span class="font-semibold text-red-500">Tutup</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-gray-100">
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-slate-500"
+                >Status Bengkel Hari Ini:</span
+              >
+              <span
+                id="status-bengkel"
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200"
+              >
+                MEMUAT...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daftar Harga Layanan / Price List -->
+    <section class="max-w-6xl mx-auto px-4 py-6 w-full">
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-900">
+          Daftar Harga & Layanan
+        </h2>
+        <p class="text-slate-500 text-sm mt-1">
+          Estimasi biaya perawatan dan perbaikan di Fspeed Garage
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Item 1 -->
+        <div
+          class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-500 transition shadow-sm hover:shadow-md"
+        >
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-bold text-base text-slate-900">
+              Servis Rutin / Tune Up
+            </h3>
+            <span class="text-emerald-600 font-extrabold text-sm"
+              >Rp 45.000</span
+            >
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Pembersihan karburator/throttle body, cek busi, filter udara, dan
+            penyetelan rantai/rem.
+          </p>
+          <span
+            class="text-[10px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium"
+            >Semua Jenis Motor</span
+          >
+        </div>
+
+        <!-- Item 2 -->
+        <div
+          class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-500 transition shadow-sm hover:shadow-md"
+        >
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-bold text-base text-slate-900">Servis CVT Matik</h3>
+            <span class="text-emerald-600 font-extrabold text-sm"
+              >Rp 35.000</span
+            >
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Pembersihan komplit area CVT, pemberian gemuk/grease khusus, dan cek
+            kondisi roller/v-belt.
+          </p>
+          <span
+            class="text-[10px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium"
+            >Khusus Motor Matic</span
+          >
+        </div>
+
+        <!-- Item 3 -->
+        <div
+          class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-500 transition shadow-sm hover:shadow-md"
+        >
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-bold text-base text-slate-900">
+              Jasa Ganti Oli Mesin
+            </h3>
+            <span class="text-emerald-600 font-extrabold text-sm"
+              >Rp 15.000</span
+            >
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Pengurasan dan penggantian oli mesin (belum termasuk harga oli yang
+            dipilih).
+          </p>
+          <span
+            class="text-[10px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium"
+            >Semua Jenis Motor</span
+          >
+        </div>
+
+        <!-- Item 4 -->
+        <div
+          class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-500 transition shadow-sm hover:shadow-md"
+        >
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-bold text-base text-slate-900">Ganti Kampas Rem</h3>
+            <span class="text-emerald-600 font-extrabold text-sm"
+              >Rp 30.000</span
+            >
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Jasa pasang kampas rem baru beserta pembersihan kaliper dan piringan
+            cakram.
+          </p>
+          <span
+            class="text-[10px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium"
+            >Per Roda</span
+          >
+        </div>
+
+        <!-- Item 5 -->
+        <div
+          class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-500 transition shadow-sm hover:shadow-md"
+        >
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-bold text-base text-slate-900">
+              Reset & Scan Injeksi (FI)
+            </h3>
+            <span class="text-emerald-600 font-extrabold text-sm"
+              >Rp 30.000</span
+            >
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Pengecekan sistem elektronik injeksi menggunakan diagnostic tool dan
+            reset kode error ECU.
+          </p>
+          <span
+            class="text-[10px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium"
+            >Motor Injeksi</span
+          >
+        </div>
+
+        <!-- Item 6 (TAMBAHAN: LIST JASA BORE UP) -->
+        <div
+          class="bg-emerald-50/60 border border-emerald-300 rounded-xl p-5 hover:border-emerald-600 transition shadow-sm hover:shadow-md relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 bg-emerald-600 text-white text-[9px] font-bold px-2 py-0.5 rounded-bl"
+          >
+            POPULER
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-bold text-base text-emerald-950">
+              Paket Jasa Bore Up
+            </h3>
+            <span class="text-emerald-600 font-extrabold text-sm"
+              >Mulai Rp 350.000-550.000</span
+            >
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Pemasangan blok & piston bore up, porting polishing head,
+            penyesuaian rasio kompresi, dan setting ulang debit bensin/ECU.
+          </p>
+          <span
+            class="text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded font-semibold"
+            >Performances & Upgrade</span
+          >
+        </div>
+
+        <!-- Item 7 -->
+        <div
+          class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-500 transition shadow-sm hover:shadow-md"
+        >
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="font-bold text-base text-slate-900">
+              Overhaul / Turun Mesin
+            </h3>
+            <span class="text-emerald-600 font-extrabold text-sm"
+              >Mulai Rp 350.000-450.000</span
+            >
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed mb-4">
+            Perbaikan besar mesin, ganti seher/piston standar, skir klep, dan
+            ganti paking mesin total.
+          </p>
+          <span
+            class="text-[10px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded font-medium"
+            >Perbaikan Berat</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-6">
+      <div class="max-w-6xl mx-auto px-4 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Fspeed Garage. All rights reserved.</p>
+        <p class="mt-1">
+          ciledug parung serab Jl.swadaya v NO38B kontrakan NO.B12 | WA:
+          0831-4394-7796
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script Status Buka/Tutup -->
+    <script>
+      function checkStatusBengkel() {
+        const now = new Date();
+        const day = now.getDay(); // 0: Minggu, 1: Senin, ..., 6: Sabtu
+        const hour = now.getHours();
+
+        const statusElement = document.getElementById("status-bengkel");
+        let isBuka = false;
+
+        if (day >= 1 && day <= 5) {
+          // Senin - Jumat (08:00 - 17:00)
+          if (hour >= 8 && hour < 17) isBuka = true;
+        } else if (day === 6) {
+          // Sabtu (08:00 - 15:00)
+          if (hour >= 8 && hour < 15) isBuka = true;
+        }
+
+        if (isBuka) {
+          statusElement.innerText = "BUKA HARI INI";
+          statusElement.className =
+            "text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-300";
+        } else {
+          statusElement.innerText = "SEDANG TUTUP";
+          statusElement.className =
+            "text-xs font-bold px-2.5 py-1 rounded-full bg-red-100 text-red-600 border border-red-200";
+        }
+      }
+
+      checkStatusBengkel();
+    </script>
   </body>
 </html>
